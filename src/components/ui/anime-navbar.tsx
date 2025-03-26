@@ -63,13 +63,9 @@ export function AnimeNavBar({ items, className, defaultActive = "Home" }: NavBar
             const isHovered = hoveredTab === item.name
 
             return (
-              <Link
+              <div
                 key={item.name}
-                to={item.url}
-                onClick={(e) => {
-                  if (item.url === "#") {
-                    e.preventDefault();
-                  }
+                onClick={() => {
                   setActiveTab(item.name)
                 }}
                 onMouseEnter={() => setHoveredTab(item.name)}
@@ -271,7 +267,7 @@ export function AnimeNavBar({ items, className, defaultActive = "Home" }: NavBar
                     </div>
                   </motion.div>
                 )}
-              </Link>
+              </div>
             )
           })}
         </motion.div>
