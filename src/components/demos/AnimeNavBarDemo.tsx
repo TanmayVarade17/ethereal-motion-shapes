@@ -11,7 +11,7 @@ const items = [
     icon: Home,
   },
   {
-    name: "Convert",
+    name: "Services",
     url: "#",
     icon: FileText,
   },
@@ -35,9 +35,9 @@ export function AnimeNavBarDemo() {
         <Button
           borderRadius="1.75rem"
           className="bg-white/10 dark:bg-slate-900/10 text-white border-white/20 hover:bg-white/20 transition-colors"
-          containerClassName="w-auto h-12"
+          containerClassName="w-auto h-10"
         >
-          Get in Touch
+          Contact Us
         </Button>
       </div>
     </>

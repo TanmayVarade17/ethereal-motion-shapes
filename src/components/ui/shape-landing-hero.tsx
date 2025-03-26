@@ -193,6 +193,27 @@ function HeroGeometric({
                             innovative design and cutting-edge technology.
                         </p>
                     </motion.div>
+
+                    <motion.div
+                        custom={3}
+                        variants={fadeUpVariants}
+                        initial="hidden"
+                        animate="visible"
+                        className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12"
+                    >
+                        <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+                            <h3 className="text-xl font-semibold text-white mb-3">Web Development</h3>
+                            <p className="text-white/60 text-sm">Custom websites and web applications built with the latest technologies.</p>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+                            <h3 className="text-xl font-semibold text-white mb-3">Mobile Design</h3>
+                            <p className="text-white/60 text-sm">Intuitive and responsive mobile applications for iOS and Android platforms.</p>
+                        </div>
+                        <div className="bg-white/5 backdrop-blur-sm p-6 rounded-xl border border-white/10">
+                            <h3 className="text-xl font-semibold text-white mb-3">UI/UX Design</h3>
+                            <p className="text-white/60 text-sm">Beautiful user interfaces with exceptional user experience that converts visitors.</p>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
 
